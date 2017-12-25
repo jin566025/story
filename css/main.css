@@ -1,0 +1,110 @@
+#header{
+	height: 60px;line-height: 60px;border-bottom: 1px solid #DBDBDB;
+}
+.header-container:after,.header-right:after,.recommend-container:after,.main:after{
+	display: block;
+	content: " ";
+	clear: both;
+}
+.header-container{
+	width: 94%;margin: 0 auto;
+}
+.header-left,.header-right,.header-container{
+	height: 100%;
+}
+.header-left img{
+	height: 60%;vertical-align: middle;
+}
+.header-left{
+	float: left;
+}
+.header-right{
+	float: right;
+}
+.header-right div{
+	display: inline-block;cursor: pointer;margin-left: 20px;font-size: 13px;
+}
+.header-right div:hover{
+	border-bottom: 3px solid slategray;
+}
+
+
+.logo{
+	cursor: pointer;
+}
+
+.container{
+	width: 60%;margin: 0 auto;
+}
+.title{
+	font-size: 35px;padding: 40px 0 30px 0;color: #484848;
+}
+
+
+.navs{
+	display: inline-block;height: 40px;line-height: 40px;font-size: 15px;margin-right: 20px;
+	cursor: pointer;
+}
+.navs-container:after{
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.navs-container{
+	padding-bottom: 20px;border-bottom: 1px solid gainsboro;
+}
+.navs-active{
+	color: #008489;border-bottom: 2px solid #008489;
+}
+
+
+.title2{
+	font-size: 28px;padding: 25px 0 20px 0;color: #484848;
+}
+.recommend-container{
+	width: 100%;
+}
+
+.recommends{
+
+	display: inline-block;
+	border-radius: 5px;
+	vertical-align: middle;
+	background-repeat:no-repeat ;background-size:cover ;
+	background-position: center;
+	background-image: url(../img/bg1.png);
+	margin-right:2%;
+	text-align: center;
+	width:20%;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.recommend-title{
+	color: #ffffff;font-size: 24px;font-weight: bolder;
+}
+.text-over{
+	text-overflow: ellipsis;overflow: hidden;white-space: nowrap;
+}
+
+
+
+.section{
+	width: 23%;margin-right: 2%;cursor: pointer;float: left;margin-bottom: 30px;
+	
+	
+}
+.section-container,.section-container2{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;position: relative;
+}
+
+.desc{
+	font-size: 14px;height: 40px;overflow: hidden;text-overflow: ellipsis;margin-top: 10px;
+}
+
+.tag{
+	position: absolute;bottom: 10px;right: 10px;padding: 5px 10px;background-color: #FFFFFF;border-radius: 5px;
+}
