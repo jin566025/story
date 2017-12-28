@@ -30,9 +30,9 @@ $(function(){
 	$(".collect").click(function() {
 	    var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
 	    if (document.all) {
-	        window.external.addFavorite('http://www.baidu.com', '前端笔记')
+	        window.external.addFavorite('url', 'story')
 	    } else if (window.sidebar) {
-	        window.sidebar.addPanel('前端笔记', 'http://www.baidu.com', "")
+	        window.sidebar.addPanel('story', 'url', "")
 	    } else {
 	        alert('您可以尝试通过快捷键' + ctrl + ' + D 加入到收藏夹~')
 	    }

@@ -10,9 +10,15 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/love.ico" media="screen" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		
 	</head>
+	
+	<!--带有data-bg的必须要有lazy这个类名，用于懒加载-->
 	<body>
+		<!--通用的头部-->
 		<div id="header">
 			<div class="header-container">
 				<div class="header-left">
@@ -23,9 +29,11 @@
 					<div class="setIndex">设为首页</div>
 				</div>
 			</div>
-			
 		</div>
+		
+		<!--页面主体部分 -->
 		<div class="container">
+			<!--通用的导航-->
 			<h1 class="title">益~天<a style="margin: 0 10px;">の</a>故事</h1>
 			<div class="navs-container">
 				<div class="navs navs-active">精选故事</div>
@@ -35,18 +43,29 @@
 				<div class="navs">语录</div>
 				<div class="navs">关于我们</div>
 			</div>
-			
+			<!--轮播图-->
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide lazy"  data-bg="url(story-img/3.jpg)"></div>
+		            <div class="swiper-slide lazy"  data-bg="url(story-img/10.jpg)"></div>
+		            <div class="swiper-slide lazy"  data-bg="url(story-img/12.jpg)"></div>
+
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		    </div>
+		    
 			<h2 class="title2 title3">推荐</h2>
 			<div class="recommend-container">
-				<div class="recommends" style="background-image: url(img/bg1.png);">
+				<div class="recommends lazy" data-bg="url(img/bg1.png)">
 					<h1 class="recommend-title">关于益姑娘</h1>
 
 				</div>
-				<div class="recommends" style="background-image: url(img/bg2.png);">
+				<div class="recommends lazy" data-bg="url(img/bg2.png)">
 					<h1 class="recommend-title">关于金先生</h1>
 					
 				</div>
-				<div class="recommends" style="background-image: url(img/bg3.png);">
+				<div class="recommends lazy" data-bg="url(img/bg3.png)">
 					<h1 class="recommend-title">一棵会开花的树</h1>
 
 				</div>
@@ -54,106 +73,122 @@
 			
 			<h2 class="title2">精选故事</h2>
 			<div class="main">
+				
+				<!--一个section是一个小块-->
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/1.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/1.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">请相信，这个世界上真的有人过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/2.jpg)" >
+					<div class="section-container lazy"  data-bg="url(story-img/2.jpg)" >
 						<div class="tag">旅行</div>
 					</div>
 					<p class="desc">愿你我可以带着最微薄的行李和最丰盛的自己在世间流浪</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/3.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/3.jpg)">
 						<div class="tag">旅行</div>
 					</div>
 					<p class="desc">人海茫茫，遇之是幸，不遇是命</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/4.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/4.jpg)">
 						<div class="tag">琐事</div>
 					</div>
 					<p class="desc">其实世上哪儿有什么一见钟情，所谓的一见钟情，不过是你终于遇到了你那个一直想要的人而已</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/6.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/6.jpg)">
 						<div class="tag">语录</div>
 					</div>
 					<p class="desc">没人告诉我，很多人一辈子只能遇见一次，擦肩而过就是杳然一生</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/7.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/7.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">情谊这东西，一见如故容易，难的是来日方长的陪伴</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/8.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/8.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">诗难果腹养心肺，酒不解渴润平生</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/9.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/9.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">闪念之间你会发现，总有些东西，并不曾变淡</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/1.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/1.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">请相信，这个世界上真的有人过着你想要的生活。忽晴忽雨的江湖，祝你有梦为马，随处可栖。</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/2.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/2.jpg)">
 						<div class="tag">旅行</div>
 					</div>
 					<p class="desc">愿你我可以带着最微薄的行李和最丰盛的自己在世间流浪</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/3.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/3.jpg)">
 						<div class="tag">旅行</div>
 					</div>
 					<p class="desc">人海茫茫，遇之是幸，不遇是命</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/4.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/4.jpg)">
 						<div class="tag">琐事</div>
 					</div>
 					<p class="desc">其实世上哪儿有什么一见钟情，所谓的一见钟情，不过是你终于遇到了你那个一直想要的人而已</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/6.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/6.jpg)">
 						<div class="tag">语录</div>
 					</div>
 					<p class="desc">没人告诉我，很多人一辈子只能遇见一次，擦肩而过就是杳然一生</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/7.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/7.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">情谊这东西，一见如故容易，难的是来日方长的陪伴</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/8.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/8.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">诗难果腹养心肺，酒不解渴润平生</p>
 				</div>
 				<div class="section">
-					<div class="section-container"  data-bg="url(story-img/9.jpg)">
+					<div class="section-container lazy"  data-bg="url(story-img/9.jpg)">
 						<div class="tag">生活</div>
 					</div>
 					<p class="desc">闪念之间你会发现，总有些东西，并不曾变淡</p>
 				</div>
 			</div>
 		</div>
+		<footer>
+			Copyright 2018 by zkaiyi .All rights reserved.
+		</footer>
 		<script src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="js/onload.js" ></script>
-		<script type="text/javascript" src="js/url.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+		<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false
+	    });
+	    </script>
 	</body>
 </html>
