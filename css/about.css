@@ -18,8 +18,11 @@
 .person-desc-right{
 	flex: 1;margin-right: 50px;
 }
-.liuyan{
+.liuyan,.liuyan-list{
 	padding: 50px 0;border-top: 1px solid gainsboro;margin-top: 50px;font-size: 16px;text-align: center;cursor: pointer;
+}
+.liuyan{
+	margin-top: 0px;
 }
 .mail{
 	height: 100px;
@@ -29,4 +32,13 @@
 }
 .liuyan:hover{
 	font-size: 18px;font-weight: bold;
+}
+.liuyan-list{
+	text-align: left;
+}
+.liuyan-content,.liuyan-time{
+	text-indent: 2em;font-size: 14px;padding-top: 10px;
+}
+.lists{
+	margin-bottom: 40px;
 }
