@@ -11,13 +11,13 @@ $(function(){
 		window.location.href='travel.html'
 	})
 	$(".navs").eq(2).click(function(){
-		window.location.href='quotations.html'
+		window.location.href='trifles.html'
 	})
 	$(".navs").eq(3).click(function(){
 		window.location.href='life.html'
 	})
 	$(".navs").eq(4).click(function(){
-		window.location.href='trifles.html'
+		window.location.href='quotations.html'
 	})
 	$(".navs").eq(5).click(function(){
 		window.location.href='about.html'
