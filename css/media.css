@@ -60,6 +60,9 @@
 	.person-desc-right{
 		margin-right: 0;
 	}
+	.basic-grey{
+		max-width: 300px;
+	}
 }
 
 @media screen  and (max-width:320px){
